@@ -56,21 +56,31 @@
 //	return(month + "/" + day + "/" + year);
 //}
 
-//leap:
-//Write a function to return if the given year is a leap year. A year is leap if it is divisible by 4, but not divisible 100, unless it is also divisible by 400.
-function isLeap(yearInput){
-//	var currentDate = new Date(Date.now());
-//	var year = currentDate.getFullYear();
+//function isLeap(yearInput){
+////	var currentDate = new Date(Date.now());
+////	var year = currentDate.getFullYear();
+//
+//	if(yearInput % 4 != 0){
+//		return false;
+//	}
+//	else if(yearInput % 100 == 0 && yearInput % 400 != 0){
+//		return false;
+//	}
+//	else{
+//		return true;
+//	}
+//	return true;
+//}
 
-	if(yearInput % 4 != 0){
-		return false;
-	}
-	else if(yearInput % 100 == 0 && yearInput % 400 != 0){
-		return false;
-	}
-	else{
-		return true;
-	}
-	return true;
-}
+//function areConsecutive(a,b,c,d,e){
+//	var myArray = [a,b,c,d,e];
+//	for(i = 0; i < 5; i ++)
+//	if((myArray[i] + 1) != (myArray[i + 1])){
+//		return false;
+//	}
+//	return true;
+//}
+
+
+
 
