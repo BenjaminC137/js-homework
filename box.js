@@ -1,6 +1,7 @@
 document.onkeypress = function(e){
 
 	var box = document.getElementsByTagName("box")[0];
+//	var  = document.getElementsByTagName("box")[0];
 
 	var top = window.getComputedStyle(box).top;
 
@@ -14,6 +15,30 @@ document.onkeypress = function(e){
 
 	var posy = window.getComputedStyle(box).backgroundPositionY;
 	posy = Number(posy.replace("px", ""));
+
+	if(left < 1){ // if hit left
+		left = 1;
+		left += "px"
+		box.style.left = left;
+	}
+
+	if(left > window.innerWidth - 50){ // if hit right
+		left = window.innerWidth - 55;
+		left += "px"
+		box.style.left = left;
+	}
+
+		if(top < 1){ // if hit top
+		top = 1;
+		top += "px"
+		box.style.top = top;
+	}
+
+		if(top > window.innerHeight - 70){ // if hit bottom
+		top = window.innerHeight - 76;
+		top += "px"
+		box.style.top = top;
+	}
 
 	if(e.key == 'd'){ //move right
 		left += 10;
@@ -72,12 +97,6 @@ document.onkeypress = function(e){
     console.log(e.key);
     }
 
-//document.onclick = function cursorLocation(){
-//	var coordX = Event.clientX;
-//	var coordY = Event.clientY;
-//	console.log(coordX, + ", " + coordY);
-//}
-
 document.onclick = function (coords){
 	var box = document.getElementsByTagName("box")[0];
 
@@ -91,5 +110,6 @@ document.onclick = function (coords){
 
 
 
-	console.log(xcoord + ", " + ycoord);
+//	console.log(xcoord + ", " + ycoord);
+//	console.log(window.innerHeight);
 }
