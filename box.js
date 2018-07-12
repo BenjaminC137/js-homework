@@ -1,7 +1,6 @@
 document.onkeypress = function(e){
 
 	var box = document.getElementsByTagName("box")[0];
-//	var  = document.getElementsByTagName("box")[0];
 
 	var top = window.getComputedStyle(box).top;
 
@@ -28,20 +27,20 @@ document.onkeypress = function(e){
 		box.style.left = left;
 	}
 
-		if(top < 1){ // if hit top
+	if(top < 1){ // if hit top
 		top = 1;
 		top += "px"
 		box.style.top = top;
 	}
 
-		if(top > window.innerHeight - 70){ // if hit bottom
+	if(top > window.innerHeight - 70){ // if hit bottom
 		top = window.innerHeight - 76;
 		top += "px"
 		box.style.top = top;
 	}
 
 	if(e.key == 'd'){ //move right
-		left += 10;
+		left += 25;
 		left += "px"
 		box.style.left = left;
 
@@ -55,7 +54,7 @@ document.onkeypress = function(e){
 	}
 
 	if(e.key == 's'){ //move down
-		top += 10;
+		top += 25;
 		top += "px"
 		box.style.top = top;
 
@@ -70,7 +69,7 @@ document.onkeypress = function(e){
 	}
 
 	if(e.key == 'a'){ //move left
-	left -= 10;
+	left -= 25;
 	left += "px"
 	box.style.left = left;
 
@@ -83,7 +82,7 @@ document.onkeypress = function(e){
 	}
 
 	if(e.key == 'w'){ //move up
-		top -= 10;
+		top -= 25;
 		top += "px"
 		box.style.top = top;
 
@@ -97,11 +96,11 @@ document.onkeypress = function(e){
     console.log(e.key);
     }
 
-document.onclick = function (coords){
-	var box = document.getElementsByTagName("box")[0];
+document.onmousedown = function (coords){
+	var box = document.getElementsByTagName("fireball")[0];
 
-	var xcoord = coords.x - 32;
-	var ycoord = coords.y - 32;
+	var xcoord = coords.x - 16;
+	var ycoord = coords.y - 16;
 
 		xcoord += "px";
 		ycoord += "px";
