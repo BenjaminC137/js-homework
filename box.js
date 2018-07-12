@@ -119,7 +119,7 @@ document.onmousedown = function (coords){
 		fireball.style.left = xcoord;
 		fireball.style.top = ycoord;
 
-if((coords.x < left + 51) && (coords.x > left + 13)){
+if(((coords.x < left + 51) && (coords.x > left + 13)) && ((coords.y < top + 66) && (coords.y > top + 13))){
 	console.log("hit");
 	box.style.backgroundColor = "red";
 }
