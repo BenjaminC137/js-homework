@@ -97,18 +97,34 @@ document.onkeypress = function(e){
     }
 
 document.onmousedown = function (coords){
-	var box = document.getElementsByTagName("fireball")[0];
+	var fireball = document.getElementsByTagName("fireball")[0];
+
+
+
+
+	var box = document.getElementsByTagName("box")[0];
+	var top = window.getComputedStyle(box).top;
+	top = Number(top.replace("px", ""));
+	var left = window.getComputedStyle(box).left;
+	left = Number(left.replace("px", ""));
+
+
+
 
 	var xcoord = coords.x - 16;
 	var ycoord = coords.y - 16;
 
 		xcoord += "px";
 		ycoord += "px";
-		box.style.left = xcoord;
-		box.style.top = ycoord;
+		fireball.style.left = xcoord;
+		fireball.style.top = ycoord;
 
+if((coords.x < left + 51) && (coords.x > left + 13)){
+	console.log("hit");
+	box.style.backgroundColor = "red";
+}
+	else{
+		box.style.backgroundColor = null;
+	}
 
-
-//	console.log(xcoord + ", " + ycoord);
-//	console.log(window.innerHeight);
 }
