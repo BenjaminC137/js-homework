@@ -71,3 +71,25 @@ document.onkeypress = function(e){
 	}
     console.log(e.key);
     }
+
+//document.onclick = function cursorLocation(){
+//	var coordX = Event.clientX;
+//	var coordY = Event.clientY;
+//	console.log(coordX, + ", " + coordY);
+//}
+
+document.onclick = function (coords){
+	var box = document.getElementsByTagName("box")[0];
+
+	var xcoord = coords.x - 32;
+	var ycoord = coords.y - 32;
+
+		xcoord += "px";
+		ycoord += "px";
+		box.style.left = xcoord;
+		box.style.top = ycoord;
+
+
+
+	console.log(xcoord + ", " + ycoord);
+}
