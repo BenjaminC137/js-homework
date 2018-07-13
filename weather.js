@@ -29,11 +29,23 @@ function showLocalWeather(){
 	console.log(weatherAPI);
 
 	$.getJSON(weatherAPI, (jsonData) => {
+		
 		$("place").html(jsonData.query.results.channel.description); })
 		$("place").fadeIn(1000);
 
 	$.getJSON(weatherAPI, (jsonData) => {
 		$("weather").html(jsonData.query.results.channel.item.description);
+		
+		var textMod = $("weather").html()
+		textMod = textMod.replace("http://us.rd.yahoo.com/dailynews/rss/weather/Country__Country/*","");
+	
+		textMod = textMod.replace("]]&gt;","");
+		textMod = textMod.replace(">Full","target=\"_blank\" >Full");
+		
+		
+		$("weather").html(textMod);
+		
+		
 		$("weather").fadeIn(1000);
 	});
 

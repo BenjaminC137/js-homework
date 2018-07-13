@@ -74,9 +74,13 @@ place{
 	margin: 5px;
 }
 .stickyBottomTab{
+	color:aliceblue;
 	position: fixed;
 	bottom: 20px;
 	right: 20px;
+	font-size: 10px;
+	background-color: rgb(94,24,140);
+	padding-left: 15px;
 }
 
 weather{
