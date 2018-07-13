@@ -22,46 +22,37 @@ That weather UI is really cool! Let’s try building a page to test it out.
 	<body>
 	<header>
 	</header>
-<h1>Weather</h1>
+<!--<h1>Weather</h1>-->
 
-		<p>		</p>
-<!--
-
-<form>
-    <label>Enter City Name</label>
-     <br>
-<input type="text" name="value?" required/>
-         <br>
-         <br>
-
-        <label>Enter two character State ID. (CA for California)</label>
-
-     <br>
-    <input type="text" name="value?" required/>
-         <br>
-         <br>
-        <button> Search </button>
-    </form>
-
--->
-		<form id="form1" onsubmit="return getFormvalue()">
-            City: <input type="text" name="fname" placeholder="Chicago"><br>
-            State: <input type="text" name="lname" placeholder="IL"><br>
+<div>
+   <div class="formBox">
+				<h2>Search for your local weather:</h2>
+			<br>
+	  <div class="roundedDiv">
+		<form id="form1" onsubmit="return getFormvalue()" class="formBack">
+            City: <input type="text" name="cityEntry" placeholder="Chicago" required><br><br>
+            State: <input type="text" name="stateEntry" placeholder="IL" required><br><br>
             <input type="submit"value="Submit">
         </form>
+	</div>
 
-
-
-		<p id="forecastResults">
-
+    <div>
+		<br>
+		<p>
+			<place>Location:</place>
 		</p>
-<p id="descriptionResults">
-		</p>
+	</div>
 
-		<place></place>
+	<div>
+		<p>
+			<weather>Weather Report:</weather>
+		</p>
+		</div>
+</div>
+
+		</div>
 
 		<br>
-		<weather></weather>
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
@@ -70,6 +61,6 @@ That weather UI is really cool! Let’s try building a page to test it out.
 <!--	<script src="app.js"></script> // my js-->
 	<script src="weather.js"></script> <!--// box's js -->
 
-	<footer>Data Provided by Yahoo Inc <img src="images/yahoo_weather.png" class="icon"></footer>
+	<footer class ="stickyBottomTab">Data Provided by Yahoo Inc <img src="images/yahoo_weather.png" class="icon"></footer>
 </body>
 </html>
