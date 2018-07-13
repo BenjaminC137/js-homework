@@ -128,3 +128,4 @@ if(((coords.x < left + 51) && (coords.x > left + 13)) && ((coords.y < top + 66) 
 	}
 
 }
+
