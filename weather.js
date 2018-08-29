@@ -22,6 +22,9 @@ function getFormvalue(){
 }
 
 function showLocalWeather(){
+		$("weather").fadeOut(1000);
+		$("place").fadeOut(1000);
+
 		locationSubmission = (cityEntry.value + "," + stateEntry.value);
 		console.log(locationSubmission);
 
@@ -42,10 +45,7 @@ function showLocalWeather(){
 		textMod = textMod.replace("]]&gt;","");
 		textMod = textMod.replace(">Full","target=\"_blank\" >Full");
 		
-		
 		$("weather").html(textMod);
-		
-		
 		$("weather").fadeIn(1000);
 	});
 

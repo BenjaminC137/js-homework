@@ -37,7 +37,6 @@ a{
 	border-style: hidden;
 	border-radius: 25px;
 	margin: 5px;
-
 }
 
 h1{
@@ -76,8 +75,8 @@ place{
 .stickyBottomTab{
 	color:aliceblue;
 	position: fixed;
-	bottom: 20px;
-	right: 20px;
+	bottom: 25px;
+	right: 0px;
 	font-size: 10px;
 	background-color: rgb(94,24,140);
 	padding-left: 15px;

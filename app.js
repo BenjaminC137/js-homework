@@ -62,6 +62,7 @@ function isLeap(yearInput){
 	}
 	return true;
 }
+
 function areConsecutive(a,b,c,d,e){
 	var myArray = [a,b,c,d,e];
 	for(i = 0; i < 5; i ++)
@@ -76,28 +77,28 @@ function testForArrays() {
 }
 var colorState = 1;
 var i = 14;
-document.onscroll = function(){
-	var j = document.getElementsByTagName("body");
-	if(colorState == 1){
+//document.onscroll = function(){
+//	var j = document.getElementsByTagName("body");
+//	if(colorState == 1){
 //	j[0].style.backgroundColor = "red";
 //	j[0].style.color = "yellow";
 //	j[0].style.textShadow = "2px 2px 2px green";
-	if(i < 100){
-		i++
-	}
-	else{
-		i += -1;
-		 }
-	j[0].style.fontSize = i +"px";
-
-	colorState = 1;
-	}
+//	if(i < 100){
+//		i++
+//	}
 //	else{
-////	j[0].style.backgroundColor = "blue";
-////	j[0].style.color = "lightgreen";
-////	j[0].style.textShadow = "8px 2px 4px #fff";
-//	j[0].style.fontSize = "24px";
+//		i += -1;
+//		 }
+//	j[0].style.fontSize = i +"px";
+//
 //	colorState = 1;
 //	}
-	console.log("key pressed");
-}
+////	else{
+//////	j[0].style.backgroundColor = "blue";
+//////	j[0].style.color = "lightgreen";
+//////	j[0].style.textShadow = "8px 2px 4px #fff";
+////	j[0].style.fontSize = "24px";
+////	colorState = 1;
+////	}
+//	console.log("key pressed");
+//}
