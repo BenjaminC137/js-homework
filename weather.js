@@ -48,9 +48,6 @@ function showLocalWeather(){
 		$("weather").html(textMod);
 		$("weather").fadeIn(1000);
 	});
-
-
-
 }
 
 
